@@ -1,0 +1,8 @@
+<h2 class="text-center">Challenge 2</h2>
+<p
+  *ngFor="let item of visibilityArray"
+  class="text-center p-2 my-4 rounded text-white font-weight-bold w-50 mx-auto"
+  [ngClass]="item ? 'bg-primary' : 'bg-danger'"
+>
+  Is now page visible.!? {{ item ? "Yes" : "No" }}
+</p>

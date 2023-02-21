@@ -3,8 +3,17 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styleUrls: ['./app.component.less'],
 })
 export class AppComponent {
-  title = 'rxjs-challenge';
+  Challenges = [
+    {
+      name: 'Challenge 1',
+      path: 'challenge1',
+    },
+    {
+      name: 'Challenge 2',
+      path: 'challenge2',
+    },
+  ];
 }
