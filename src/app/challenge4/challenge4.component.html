@@ -1,0 +1,26 @@
+<h2 class="text-center">Challenge 4</h2>
+
+<button class="btn btn-primary my-2" (click)="load$.next()">
+  Start loading
+</button>
+
+<h3 *ngIf="result$ | async as result; else loading">
+  {{ result }}
+</h3>
+
+<ng-template #loading>
+  <ng-container *ngIf="loadingProgress$ | async as progress">
+    <div class="progress my-2">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        [ngStyle]="{ width: progress + '%' }"
+      >
+        {{ progress }}%
+      </div>
+    </div>
+    <h5>Loading{{ loaderDot$ | async }}</h5>
+  </ng-container>
+</ng-template>
