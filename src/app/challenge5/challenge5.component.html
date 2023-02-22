@@ -1,0 +1,10 @@
+<div class="container">
+  <ng-container *ngIf="countdown$ | async as value; else resend">
+    <h4>Resend code in {{ value }} sec.</h4>
+  </ng-container>
+  <ng-template #resend>
+    <button class="btn btn-primary" (click)="resend$.next()">
+      Resend code
+    </button>
+  </ng-template>
+</div>

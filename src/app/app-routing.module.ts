@@ -4,12 +4,14 @@ import { Challenge1Component } from './challenge1/challenge1.component';
 import { Challenge2Component } from './challenge2/challenge2.component';
 import { Challenge3Component } from './challenge3/challenge3.component';
 import { Challenge4Component } from './challenge4/challenge4.component';
+import { Challenge5Component } from './challenge5/challenge5.component';
 
 const routes: Routes = [
   { path: 'challenge1', component: Challenge1Component },
   { path: 'challenge2', component: Challenge2Component },
   { path: 'challenge3', component: Challenge3Component },
   { path: 'challenge4', component: Challenge4Component },
+  { path: 'challenge5', component: Challenge5Component },
 ];
 
 @NgModule({
@@ -23,4 +25,5 @@ export const routingComponents = [
   Challenge2Component,
   Challenge3Component,
   Challenge4Component,
+  Challenge5Component,
 ];
