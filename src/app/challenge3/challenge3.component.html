@@ -1,0 +1,36 @@
+<h2 class="text-center">Challenge 3</h2>
+<form #userlogin="ngForm" class="d-flex flex-column">
+  <label>Email address</label>
+  <input
+    type="email"
+    class="form-control my-2"
+    placeholder="Enter email"
+    ngModel
+    name="username"
+    #username="ngModel"
+    required
+  />
+  <label>Password</label>
+  <input
+    type="password"
+    class="form-control my-2"
+    placeholder="Password"
+    ngModel
+    name="password"
+    #password="ngModel"
+    required
+  />
+  <ng-template #submitBtn>
+    <button
+      class="btn btn-primary my-2"
+      [disabled]="disabled$ | async"
+      (click)="submit$.next(userlogin.value.username); userlogin.reset()"
+    >
+      Submit
+    </button>
+  </ng-template>
+</form>
+<div *ngIf="error$ | async as error" class="error" [@collapse]>
+  Login failed!
+</div>
+<h2 *ngIf="user$ | async as user; else submitBtn">Welcome, {{ user }}</h2>
