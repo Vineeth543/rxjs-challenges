@@ -1,10 +1,9 @@
 <div class="container">
+  <h2 class="text-center">Challenge 5</h2>
   <ng-container *ngIf="countdown$ | async as value; else resend">
-    <h4>Resend code in {{ value }} sec.</h4>
+    <h4>Resend OTP in {{ value }} sec.</h4>
   </ng-container>
   <ng-template #resend>
-    <button class="btn btn-primary" (click)="resend$.next()">
-      Resend code
-    </button>
+    <button class="btn btn-primary" (click)="resend$.next()">Resend OTP</button>
   </ng-template>
 </div>

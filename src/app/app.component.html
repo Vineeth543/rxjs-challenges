@@ -1,7 +1,7 @@
 <div class="container">
   <button
     *ngFor="let challenge of Challenges"
-    class="btn btn-secondary p-2 m-2 mt-4"
+    class="btn btn-danger text-white p-2 m-2 mt-4"
     [routerLink]="challenge.path"
   >
     {{ challenge.name }}
