@@ -1,7 +1,8 @@
 <div class="container">
+  <h1 class="text-center mt-2">RxJS Challenges</h1>
   <button
     *ngFor="let challenge of Challenges"
-    class="btn btn-danger text-white p-2 m-2 mt-4"
+    class="btn btn-dark text-white p-2 m-2 mt-4"
     [routerLink]="challenge.path"
   >
     {{ challenge.name }}

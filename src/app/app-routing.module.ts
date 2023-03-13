@@ -7,8 +7,11 @@ import { Challenge4Component } from './challenge4/challenge4.component';
 import { Challenge5Component } from './challenge5/challenge5.component';
 import { Challenge6Component } from './challenge6/challenge6.component';
 import { Challenge7Component } from './challenge7/challenge7.component';
+import { Challenge8Component } from './challenge8/challenge8.component';
+import { Challenge9Component } from './challenge9/challenge9.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/challenge1', pathMatch: 'full' },
   { path: 'challenge1', component: Challenge1Component },
   { path: 'challenge2', component: Challenge2Component },
   { path: 'challenge3', component: Challenge3Component },
@@ -16,6 +19,8 @@ const routes: Routes = [
   { path: 'challenge5', component: Challenge5Component },
   { path: 'challenge6', component: Challenge6Component },
   { path: 'challenge7', component: Challenge7Component },
+  { path: 'challenge8', component: Challenge8Component },
+  { path: 'challenge9', component: Challenge9Component },
 ];
 
 @NgModule({
@@ -32,4 +37,6 @@ export const routingComponents = [
   Challenge5Component,
   Challenge6Component,
   Challenge7Component,
+  Challenge8Component,
+  Challenge9Component,
 ];
