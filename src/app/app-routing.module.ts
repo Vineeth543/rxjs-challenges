@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Challenge1Component } from './challenge1/challenge1.component';
+import { Challenge10Component } from './challenge10/challenge10.component';
 import { Challenge2Component } from './challenge2/challenge2.component';
 import { Challenge3Component } from './challenge3/challenge3.component';
 import { Challenge4Component } from './challenge4/challenge4.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'challenge7', component: Challenge7Component },
   { path: 'challenge8', component: Challenge8Component },
   { path: 'challenge9', component: Challenge9Component },
+  { path: 'challenge10', component: Challenge10Component },
 ];
 
 @NgModule({
@@ -39,4 +41,5 @@ export const routingComponents = [
   Challenge7Component,
   Challenge8Component,
   Challenge9Component,
+  Challenge10Component,
 ];

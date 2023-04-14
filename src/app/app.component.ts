@@ -43,5 +43,9 @@ export class AppComponent {
       name: 'Challenge 9',
       path: 'challenge9',
     },
+    {
+      name: 'Challenge 10',
+      path: 'challenge10',
+    },
   ];
 }
